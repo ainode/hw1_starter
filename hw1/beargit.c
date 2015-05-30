@@ -96,6 +96,10 @@ int beargit_add(const char* filename) {
 
 int beargit_rm(const char* filename) {
   /* COMPLETE THE REST */
+  FILE *newprev = fopen(".beargit/.newindex", "w");
+
+  char line[FILENAME_SIZE];
+  fgets(line, sizeof(line), newprev);
 
   return 0;
 }
